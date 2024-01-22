@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotham+Rounded:wght@300&display=swap');
+
+a{
+    color: black;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+b{
+    color: grey;
+    text-align: right;
+    
+}
+c{
+    color: white;
+    font-size: 25px;
+    margin-left: 8px;
+}
+.logo{
+    margin: 0 auto;
+    
+    
+    
+}
+.logo img {
+    width: 250px;
+    /* We use width for images*/
+    display: block;
+    margin: 0 auto;
+
+
+    
+}
+.person{
+    width:600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #c5c6d0;
+}
+.person .personimg {
+    width:100%;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+
+    
+}
+.person .verified {
+    width:30px;
+
+    
+}
+
+.persontxt{
+    font-size: 30px;
+}
+.person-details{
+    text-align: right;
+    margin-right: 340px;
+    
+}
+.person-status{
+    text-align: right;
+    margin-right:475px;
+    font-family: 'Gotham Rounded', sans-serif;
+    font-size: 22px;
+
+
+}
+.button{
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 2px solid #9a9a9b;
+    background: #9a9a9b;
+    width: 320px;
+    font-family: 'Gotham Rounded', sans-serif;
+   
+    
+}
+.button p{
+    display: flex;
+    align-items: center;
+}
+.button .heart{
+    width: 30px;
+    margin-left: 45px;
+
+}
+hr{
+    background-color: rgb(241, 232, 232);
+    width:615px;
+    
+}
