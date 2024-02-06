@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src=https://code.jquery.com/jquery-3.3.1.min.js crossorigin="anonymous"></script>
+
+        <style>
+            #button{
+                margin: auto;
+                padding: 20px;
+               
+            }
+           
+        </style>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("Hola como estais?")
+                console.log("I was clicked "+Date.now());
+            })
+        })
+        
+    </script>
+
+   
+    <body>
+        <button id="button" class="btn btn-primary">Counter</button>
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
