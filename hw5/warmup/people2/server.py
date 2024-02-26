@@ -4,15 +4,37 @@ from flask import Response, request, jsonify
 app = Flask(__name__)
 
 
-current_id = 2
-data = [
+clients = [
+    "Shake Shack",
+    "Toast",
+    "Computer Science Department",
+    "Teacher's College",
+    "Starbucks",
+    "Subsconsious",
+    "Flat Top",
+    "Joe's Coffee",
+    "Max Caffe",
+    "Nussbaum & Wu",
+    "Taco Bell",
+]
+sales = [
     {
         "id": 1,
-        "name": "michael scott"
+        "salesperson": "James D. Halpert",
+        "client": "Shake Shack",
+        "reams": 100
     },
     {
-        "id": 2,
-        "name": "jim halpert"
+        "id":2,
+        "salesperson": "Stanley Hudson",
+        "client": "Toast",
+        "reams": 400
+    },
+    {
+        "id":3,
+        "salesperson": "Michael G. Scott",
+        "client": "Computer Science Department",
+        "reams": 1000
     },
 ]
 

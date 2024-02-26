@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+        {% block content %}
+        <script type="text/javascript">
+            // Define global variables for clients and sales
+            var clients = {{ clients|tojson | safe }};
+            var sales = {{ sales|tojson | safe }};
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'log_sales.js') }}"></script>
+        
+        <div class="containter-fluid">
+            <div class="row paper-planes">
+                <span class="col-12 top-box">
+                    Columbia Paper Infinity <br>
+                    
+                </span>
+                <div id="droppable"class="col-10 inside-box">
+                    Trash
+                </div>
+            </div>
+            <div class="row java-script-area"> 
+                <span class="col-3">
+                    Log your paper sales: 
+
+                </span>
+                <span class="col-3">
+                    <input id="input-box1" placeholder="Client"></input>
+                    
+
+                </span>
+                <span class="col-3">
+                    <input id="input-box2" placeholder="# of Reams"></input>
+
+                </span>
+                <span class="col-2">
+                    <button id="submitButton">submit</button>
+                </span>
+                <span class="col-1">
+                    
+                </span>
+
+            </div>
+            <div id="draggable" class="row record-area ui-widget-content">
+                <span class="col-3 salesperson">
+                    <ul></ul>
+                </span>
+                <span class="col-3 client">
+                    <ul></ul>
+                    
+
+                </span>
+                <span class="col-3 reams">
+                    
+                    <ul></ul>
+                    
+
+                </span>
+                <span class="col-2 deletebutton">
+                    <ul></ul>
+                    
+                </span>
+                <span class="col-1">
+                    <div id="error-messages"></div>
+                </span>
+
+
+            </div>
+        </div>
+        {% endblock %}
