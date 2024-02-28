@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<title class="view-title">Displaying results for search</title>
+<body>
+    <h1 class>{{ message }}</h1>
+    {% if results %}
+    <ul>
+        {% for item in results %}
+        <li class="search-result" data-id="{{ item.id }}">
+            <a href="/view/{{item.id}}" class="search-result">{{ item.title }} by {{ item.artist | join(', ') }} - {{ item.year }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No results found for "{{ search_query }}"</p>
+    {% endif %}
+    <a href="/">Let's get back to the home page!</a>
+</body>
+{% endblock %}

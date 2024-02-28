@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+    <h1 class="view-title">{{ item.title }}</h1>
+    <img class='song-img-view' src='{{ item.image }}' alt='Song Image'><br>
+
+    <p class="view-summary">{{ item.summary }}</p>
+    <p class="view-summary">{{ item.genres }}</p>
+    <p class="view-summary">{{ item.year }}</p>
+</div>
+{% endblock %}
