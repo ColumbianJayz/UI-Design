@@ -74,17 +74,35 @@ ul li {
     color: #e607a0;
     padding-top: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
+
 .song-img-view{
-    width: 500px;
+    width: 300px;
     padding-top: 20px;
-    border-radius: 20%;
+    border-radius: 90%;
 }
 .view-summary{
     color: #e607a0;
     font-size: 18px;
     line-height: 1.5;
     margin-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+    width: auto;
 }
-
-
+.view-summary1{
+    color: #740000;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+    width: auto;
+}
+.in-summary{
+    font-weight: bold;
+}
+.bold-sections{
+    color: #740000;
+}

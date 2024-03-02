@@ -4,9 +4,11 @@
 <div style="text-align: center;">
     <h1 class="view-title">{{ item.title }}</h1>
     <img class='song-img-view' src='{{ item.image }}' alt='Song Image'><br>
+    <p class="view-summary"><b class="bold-sections">By</b> {{ item.artist }}</p>
 
-    <p class="view-summary">{{ item.summary }}</p>
-    <p class="view-summary">{{ item.genres }}</p>
-    <p class="view-summary">{{ item.year }}</p>
+    <p class="view-summary1 col-md-6">{{ item.summary }}</p>
+    
+     <p class="view-summary"> <b class="bold-sections">Genres:</b> {{ item.genres }}</p>
+    <p class="view-summary"><b class="bold-sections">Year released:</b> {{ item.year }}</p>
 </div>
 {% endblock %}

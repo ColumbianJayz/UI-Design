@@ -120,14 +120,30 @@ def welcome():
 def search():
     query = request.args.get('query', '').lower()
     if not query:
-      return render_template('welcome.html', data ={}, search_query = query, message = "No results found motobeibi. Please enter a valid search")
-    results = [item for item in data.values() if query.lower() in item['title'].lower()]
+        return render_template('welcome.html', data={}, search_query=query, message="No results found. Please enter a valid search")
+
+    results = []
+    for item_id, item in data.items():
+      
+        if query in item['title'].lower():
+            results.append(item)
+            continue 
+
+        
+        if any(query in artist.lower() for artist in item.get('artist', [])):
+            results.append(item)
+            continue 
+
+       
+        if any(query in genre.lower() for genre in item.get('genres', [])):
+            results.append(item)
+            continue 
 
     if not results:
         message = "No results found"
-    else: 
+    else:
         message = f"Found it! Displaying results below for \"{query}\""
-    return render_template('search.html', results=results, search_query=query, message = message)
+    return render_template('search.html', results=results, search_query=query, message=message)
 
 @app.route('/view/<id>')
 def view(id):
