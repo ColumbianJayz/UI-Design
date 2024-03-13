@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+        {% block content %}
+        <script type="text/javascript" src="{{ url_for('static', filename = 'songs.js') }}"></script>
+        <script type="text/javascript">
+            // Define global variables for clients and sales
+            var data = {{ data|tojson | safe }};
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'log_sales.js') }}"></script>
+        <h1 class="welcome-h1"><b class="h1-logo-name">BichotaDB</b> your #1 source for the hottest Latin Music</h1>
+        <div class="scroll-container">
+            <p class="scroll-text">
+                <b class="h1-logo-name">Hottest songs this week!  </b> Click the images to learn more about today's top hits, dale!!! 😎
+            </p>
+        </div>
+        <div class="containter-fluid">
+            <div id="draggable" class="row record-area ui-widget-content">
+                <span class="col-3 song">
+                    <ul></ul>
+                </span>
+            </div>
+        </div>
+        {% endblock %}

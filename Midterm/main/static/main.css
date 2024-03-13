@@ -1,0 +1,203 @@
+.nav-bar{
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #740000;
+    border-radius: 10px;
+    
+
+    
+}
+.highlight {
+    background-color: #e607a0;
+}
+.lay-out{
+    background-color: rgb(245, 242, 242);
+}
+p{
+    color: green;
+    padding: 20px;
+    text-align: center;
+    margin-top: 400px;
+}
+.span1{
+    padding-left: 250px;
+    padding-right: 200px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+    color: #e607a0;
+}
+.name{
+    font-family: serif;
+    font-size: 25px;
+}
+.row .nav-bar{
+    display: inline-flex;
+}
+.search-box{
+    padding-left: 200px;
+    border-radius: 90px;
+    
+}
+.submit-button{
+    background-color: #e607a0;
+    border-radius: 10px;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30px;
+}
+.add-text{
+    text-decoration: none;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.add-button{
+    text-decoration: none;
+    background-color: #e607a0;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+ul li {
+    list-style-type: none; /* Removes the bullet point from all list items within unordered lists */
+}
+.welcome-h1{
+    text-align: center;
+    padding: 30px;
+    color:#740000;
+    font-size: 30px
+}
+.h1-logo-name{
+    font-family: serif;
+    color: #e607a0;
+}
+.scroll-container{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+}
+.scroll-text{
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+    font-size: 30px;
+    color: #740000;
+    font-size: 25px;
+
+}
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.song-img {
+    width: 250px; /* Set the width as desired */
+    height: 250px; /* Set the height as desired */
+    object-fit: cover; /* This property makes sure the image covers the area without losing its aspect ratio */
+    border-radius: 90px;
+    padding-top: 20px;
+  }
+.record-area {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+.song-row {
+    display: flex; 
+    justify-content: center; 
+    flex: 1 0 auto; 
+    text-align: center;
+}
+.search-result{
+    color: rgb(101, 100, 100);
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.search-h1{
+    color: #e607a0;
+    margin-left: 20px;
+    padding: 20px;
+
+}
+/* VIEW.HTML */
+.view-title{
+    color: #e607a0;
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.song-img-view{
+    width: 300px;
+    padding-top: 20px;
+    border-radius: 500px;
+}
+.view-summary{
+    color: #e607a0;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+    width: auto;
+}
+.view-summary1{
+    color: rgb(63, 62, 62);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+    width: auto;
+}
+.in-summary{
+    font-weight: bold;
+}
+.bold-sections{
+    color: #740000;
+}
+.view-edit, #discardChangesButton, #submit-btn2, #submit-btn{
+    background-color: #e607a0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+.view-edit-text{
+    color: lightgray;
+    text-decoration: none;
+    
+}
+.year-button{
+    background-color: #ae00ff;
+    border-radius: 10px;
+    color: lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+}
+.year-text{
+    color: lightgrey;
+    text-decoration: none;
+}
+/* EDIT.HTML*/
+.edit-h1{
+    text-align: center;
+    color:#e607a0;
+    padding: 30px;
+}
+.error-focus:focus {
+    outline: 2px solid #e607a0;
+}
+.edit-col{
+    margin: 0 auto;
+    
+}
+
+
+

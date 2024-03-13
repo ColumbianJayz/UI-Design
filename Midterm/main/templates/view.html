@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+    <h1 class="view-title">{{ item.title }}</h1>
+    <img class='song-img-view' src='{{ item.image }}' alt='Image relating to the artist.'><br>
+    <p class="view-summary"><b class="bold-sections">By</b> {{ item.artist }}</p>
+   <button class="view-edit">
+    <a href="/edit/{{ item.id }}" class="view-edit-text">Edit</a>
+   </button>
+
+    <p class="view-summary1 col-md-6">{{ item.summary }}</p>
+    
+     <p class="view-summary"> <b class="bold-sections">Genres:</b> {{ item.genres }}</p>
+    <p class="view-summary"><b class="bold-sections">Year released:</b> 
+    <button class="year-button">
+        <a href="/search?query={{item.year}}" class="year-text"> {{ item.year }} </a>
+
+    </button></p>
+</div>
+{% endblock %}

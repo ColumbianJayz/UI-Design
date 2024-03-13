@@ -78,18 +78,7 @@ function save_sale(event) {
         success: function(data) {
             let sales = data["sales"]
             display_sales_list(sales)
-            /* Add the new sale to the top of the list
-            let $recordRow = $("<div class='row sale-record'></div>");
-            let $salespersonCol = $("<div class='col-3'><li>" + new_sale.salesperson + "</li></div>");
-            let $clientCol = $("<div class='col-3'><li>" + new_sale.client + "</li></div>");
-            let $reamsCol = $("<div class='col-3'><li>" + new_sale.reams + "</li></div>");
-            let $deleteBtnCol = $("<div class='col-2'><button class='delete-button'>Delete</button></div>"); 
-
-            $recordRow.append($salespersonCol, $clientCol, $reamsCol, $deleteBtnCol);
-            $(".record-area").prepend($recordRow);
-            */
-
-            // Update autocomplete if the client is new
+            
             let clients = data["clients"]
             $("#input-box1").autocomplete({source: clients});
         },

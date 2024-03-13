@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="edit-h1">Make the changes!</h1>
+
+<div class="col-md-3 edit-col">
+    <form id="song-form">
+        <input class="song-input" type="text">
+        <input class="artist-input" type="text">
+        <input class="description-input" type="text">
+        <input class="genres-input" type="text">
+        <input class="year-input" type="text">
+        <input class="img-input" type="text">
+        <div class="button-containers"> <input id="submit-btn2" type="button" value="Submit">
+         <button id="discardChangesButton">Discard Changes</button>
+        
+     </form>
+
+
+</div>
+<div id="link-container"></div>
+
+<script src="{{ url_for('static', filename='/songs.js') }}"></script>
+{% endblock %}

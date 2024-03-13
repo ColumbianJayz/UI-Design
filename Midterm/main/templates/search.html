@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<title class="view-title">Displaying Results for Search</title>
+<body>
+    {% if results %}
+    <h1 class="search-h1">I found {{ results|length }} result(s) for "{{ search_query }}": </h1>
+    <ul>
+        {% for item in results %}
+        <li class="search-result" data-id="{{ item.id }}">
+            <!-- Use the |safe filter to render HTML from highlighted fields -->
+            <a href="/view/{{item.id}}" class="search-result">
+                {{ item.title|safe }} by {{ item.artist|safe }} - {{ item.genres|safe }} - {{ item.year|safe }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No results found for "{{ search_query }}"</p>
+    {% endif %}
+</body>
+{% endblock %}
