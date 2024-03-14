@@ -1,0 +1,35 @@
+@media screen and (max-width: 1200px){
+    @media screen and (max-width: 1200px) {
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+    
+        .search-box {
+            width: 100%; /* Make search box and add button full width */
+            margin-top: 10px; /* Add some space above for clarity */
+        }
+    
+        .search-box .submit-button, .add-button a {
+            width: 85%; /* Adjust width to ensure it's not edge-to-edge */
+            margin: 5px auto; /* Center these elements and add some space */
+        }
+        .search-box input[type="text"]{
+            border-radius: 50px;
+            width: 85%;
+            text-align: center;
+        }
+    
+        .add-button {
+            display: block; /* Ensure the add button is block level so the anchor tag inside it fills the button */
+            width: 60%;
+        }
+    
+        .add-text {
+            display: block; /* Make the link inside the button fill the entire button area */
+            width: 100%;
+        }
+    }
+    
+}
